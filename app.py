@@ -9,6 +9,7 @@ from PIL import Image
 
 # --- 🟢 SETUP & CONFIG ---
 app = Flask(__name__)
+os.environ["PATH"] += os.pathsep + os.getcwd()
 UPLOAD_FOLDER = 'uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
