@@ -14,7 +14,7 @@ UPLOAD_FOLDER = 'uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # 1. LOAD AUDIO MODEL (Random Forest)
-AUDIO_MODEL_FILE = "poultry_audio_model.pkl" 
+AUDIO_MODEL_FILE = "poultry_model.pkl" 
 audio_model = None
 
 if os.path.exists(AUDIO_MODEL_FILE):
